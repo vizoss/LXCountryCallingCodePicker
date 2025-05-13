@@ -43,7 +43,7 @@ public class CallingCodeMetadata: Decodable {
     }
 
     static func trimmingKeyword(_ keyword: String) -> String {
-        return String(keyword.trimmingCharacters(in: .whitespaces).split(separator: " ").first!)
+        return String(keyword.trimmingCharacters(in: .whitespaces).split(separator: " ").first ?? "")
     }
 }
 
